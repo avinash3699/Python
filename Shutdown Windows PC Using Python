@@ -1,0 +1,20 @@
+#Brief Introduction about 'os' module
+''' 
+    -> The OS module in python provides functions for interacting with the operating system.
+    -> OS, comes under Python’s standard utility modules.
+    -> This module provides a portable way of using operating system dependent functionality.
+    -> The *os* and *os.path* modules include many functions to interact with the file system.
+'''
+
+#importing os module
+import os     
+
+#getting input from the user
+print("Do You Want To Shutdown Your Windows Computer? (Yes / No)")
+user_decision = input().strip()
+
+#taking decision based on the user's wish
+if(user_decision.upper() == "YES"):
+    os.system("shutdown /s /t 1")
+else:
+    print("Okay. Don't Worry, Your PC will not be Switched Off")
